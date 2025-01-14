@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.top{
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1511468102400-883d6ea28755?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: top;
+    background-size: cover;
+}
+
+.overlay{
+    min-height: inherit;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.236);
+}
+
+.text{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10vw;
+    color: #fff;
+}
+
+.text h2{
+    font-weight: 500;
+    font-size: 6vw;
+}
+
+.textright{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textright p{
+    font-size: 12px;
+    width: 40%;
+    margin: 50px 30px;
+}
+.icon{
+    display: flex;
+}
+
+.textright i{
+    color: royalblue;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+
+
+.bottom{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+}
+
+.bone{
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-color:#fff;
+}
+
+.bone p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.btwo{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://www.penguinparagliding.com/uploads/1/2/4/5/124512444/s218502092970481783_p95_i1_w525.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bthree{
+    width: 20%;
+    min-height: inherit;
+    background-color: rgb(255, 0, 212);
+    color: #fff;
+}
+
+
+.bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    background-color: orangered;
+}
+
+
+.bthreetop p{
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.bthreebottom{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(https://images.unsplash.com/photo-1519017768885-bc3d13d32ea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE1fHx8ZW58MHx8fHx8&w=1000&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bfour{
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: #444;
+    color: #fff;
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.notf .photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(WhatsApp\ Image\ 2024-05-09\ at\ 10.24.21_3126a224.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.notf p{
+    margin: 13px;
+    width: 86%;
+    font-size: 12px;
+}
+
+
+.icon i a{
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+@media (max-width: 500px) {
+
+
+   .text h2{
+    font-size: 9vh;
+   }
+
+    .overlay .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .overlay .text .textright{
+        align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .overlay .text .textright p{
+       width: initial;
+       margin-top: 20px;
+    }
+
+
+    overlay .text .textright .icon{
+        
+        margin-top: 30px;
+     }
+
+
+     .bottom{
+        min-height: 20vh;
+     }
+
+
+     .bottom{
+        flex-direction: column;
+     }
+
+     .bone{
+        width: 100%;
+     }
+
+     .btwo{
+        width: 100%;
+        min-height: 40vh;
+     }
+
+     .bthree{
+        flex-direction: column;
+        width: 100%;
+     }
+     .bthreebottom{
+        min-height: 60vh;
+     }
+
+     .bfour{
+        width: 100%;
+     }
+
+}
