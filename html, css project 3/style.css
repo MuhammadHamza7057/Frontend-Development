@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(219, 219, 219);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 40px;
+}
+#nav-part1{
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+}
+
+#nav-part2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0px 50px;
+}
+
+.nav h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.container{
+    margin: 30px;
+    padding: 15px 20px;
+    margin: 60px;
+}
+.container h2{
+    font-size: 40px;
+    font-weight: 350;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.container h3{
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: -7px;
+    line-height: 140px;
+    word-spacing: 10px;
+    
+}
+
+.case{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 35px 40px;
+    margin-top: 100px;
+}
+
+.case h4{
+    font-size: 20px;
+    font-weight: 320;
+}
+
+.image{
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+    
+}
+img{
+    height: 70%;
+    width: 45%;
+    border-radius: 6%;
+    object-fit: cover;
+}
+
+.foater{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 35px 40px;
+}
+
+.foater-left{
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.foater-right{
+    margin: 20px;
+    padding-right: 380px;
+}
+.foater h3{
+    font-size: 40px;
+    font-weight: 320;
+}
+
+.foater h5{
+    font-size: 20px;
+    font-weight: 100;
+}
+.foater h2{
+    height: 30px;
+    width: 45px;
+    align-items: center;
+    margin: 6px;
+    border: 2px solid black;
+    border-radius: 40%;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.foater h2:hover{
+    background-color: black;
+    color: white;
+}
+.landing{
+    margin: 25px 30px;
+}
+
+.landing img{
+    height: 45%;
+    width: 85%;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 60px;
+}
+
+.landing h2{
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+/* Hover effects */
+.landing h2:hover{
+    color: chocolate;
+    transform: scale(0.9);
+    cursor: pointer; 
+}
+
+#nav-part2 h3:hover{
+    color: rgb(139, 26, 26);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#nav-part1 h2:hover{
+    color: rgb(139, 26, 26);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.foater h2:hover{
+     color: rgb(139, 26, 26);
+    transform: scale(1.2);
+    cursor: all-scroll;
+}
+
+.case h4:hover{
+    color: chocolate;
+    transform: scale(1.5);
+    cursor: pointer; 
+}
+.image img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.landing img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.end{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 35px 40px;
+}
+.end i {
+    font-size: 40px; 
+}
+
+.end a:hover {
+    color: #007bff; 
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+.end a {
+    text-decoration: none; 
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    display: inline-block; 
+    border-radius: 50%; 
+    padding: 10px; 
+}
+
+
