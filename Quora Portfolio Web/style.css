@@ -1,0 +1,44 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color: purple;
+}
+h1{
+    color: brown;
+}
+.a{
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+upvote + button{
+    background-color: aqua;
+}
+.b{
+    background-color: lightblue;
+}
+/* div > element use for desent*/
+
+input[type="text"]{
+color: red;
+background-color: azure;
+}
+input[type="password"]{
+    background-color: azure;
+    color:black
+    
+    }
+    button:hover{
+        background-color: yellowgreen;
+    }
+    h3{
+        text-decoration: underline;
+    }
+    h3:hover{
+        text-decoration: none;
+    }
+    button:active{
+        background-color: red;
+    }
+    
