@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* cursor: none; */
+  /* display: flex; */
+}
+
+.swipe {
+  position: fixed;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: solid 0.2rem purple;
+
+  box-shadow: 0.1rem 0.1rem 0.4rem rgb(86, 199, 195),
+    inset 0.1rem 0.1rem 1rem rgb(62, 112, 92);
+
+  animation: roll 0.6s linear forwards;
+}
+
+@keyframes roll {
+  0% {
+    border: solid 0.1rem red;
+    transform: scale(0.1);
+  }
+
+  50% {
+    border: solid 0.25rem purple;
+    transform: scale(1.4);
+  }
+
+  100% {
+    border: solid 0.1rem rgb(35, 0, 234);
+    transform: scale(0.1);
+  }
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.5) 30%,
+      rgba(167, 223, 180, 0.5) 70%,
+      #a7dfb4
+    ),
+    /* Light to dark */ linear-gradient(to right, #a7dfb4, #b6eac2);
+}
+
+.section1 {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  height: 70px;
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #7d7878a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0; /* or bottom: 0; to fix it at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999; /* Ensures it's on top of other elements */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+i {
+  font-size: 2.5em;
+  color: #333;
+  margin-right: 5px;
+  transition: color 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+i:hover {
+  color: #007bff;
+  border-color: #007bff;
+  cursor: pointer;
+}
+
+.log {
+  color: #555;
+  display: flex;
+}
+
+ul.menu {
+  display: flex;
+  list-style: none;
+}
+
+ul.menu li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  color: black;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+ul.menu li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+ul.menu li:hover {
+  /* font-weight: 1000; */
+  color: #007bff;
+}
+
+ul.menu li:hover::after {
+  background-color: #3bc095;
+}
+.container {
+  position: relative;
+}
+
+#yr {
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  height: 30px;
+  width: 100px;
+  background-color: transparent;
+  border: 2px solid rgb(50, 48, 48);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}
+
+#yr p {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+}
+
+.universe {
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  left: 50%;
+  top: 38%;
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  cursor: default;
+}
+
+.universe h1 {
+  margin: 0;
+}
+
+.universe p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+  transition: background-color 0.3s;
+  width: 200px;
+  height: 50px;
+}
+
+.btn2 {
+  border: 2px solid rgba(0, 0, 0, 0.837);
+  background-color: #e6fcebab;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+  transition: background-color 0.3s;
+  width: 200px;
+  height: 50px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.734);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn2:hover {
+  background-color: #a4f4bc;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 1.2em;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.btn:hover .normal-arrow {
+  display: none;
+}
+
+.btn:hover .hover-arrow {
+  display: inline;
+}
+
+.hover-arrow {
+  display: none;
+}
+
+.universe {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn2:hover .normal-arrow {
+  display: none;
+}
+
+.btn2:hover .hover-arrow {
+  display: inline;
+}
+.imganimated {
+  /* height: 100%; */
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slide 5s linear infinite;
+}
+
+.section2 {
+  /* position: relative; */
+  display: flex;
+  height: 100%;
+  background: linear-gradient(
+      to left,
+      rgba(167, 223, 180, 0.5) 70%,
+      rgba(255, 255, 255, 0.5) 30%,
+      rgba(167, 223, 180, 0.5) 70%,
+      #a7dfb4
+    ),
+    /* Light to dark */ linear-gradient(to bottom, #a7dfb4, #b6eac2);
+}
+
+.imganimated img {
+  /* position: absolute;
+     top: 25%;
+     left: 50%;
+     transform: translate(-50%, -50%); */
+  mix-blend-mode: normal;
+  width: 200px;
+  height: 200px;
+  animation: rotate 2s linear infinite;
+}
+
+.card1 {
+  width: 300px;
+  height: 300px;
+  background-color: #1d4165;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 80px;
+  /* margin: 20px; */
+}
+
+.card2 {
+  width: 300px;
+  height: 300px;
+  background-color: #1d4165;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 120px;
+  /* margin: 20px; */
+}
+
+/* .card3 {
+  width: 300px;
+  height: 300px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 140px;
+  /* margin: 20px; */
+} */
