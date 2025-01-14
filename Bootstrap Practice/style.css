@@ -1,0 +1,24 @@
+.btn{
+    /* position: absolute; */
+    top: 30px;
+    left: 40px;
+    /* transform: translate(-50%, -50%); */
+}
+
+.card{
+    top: 30px;
+    left: 50px;
+    background-color: orange;
+}
+
+.card h4{
+    margin: 20px 30px;
+}
+
+.card h4:hover{
+    align-items: center;
+    border-radius: 20%;
+    width: 90px;
+    cursor: pointer;
+    background-color: aqua;
+}
